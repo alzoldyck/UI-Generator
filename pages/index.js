@@ -110,6 +110,14 @@ export default function Home() {
             </div>
           </form>
         </div>
+
+                 {/* Footer */}
+      <footer style={footerStyle}>
+        <div>
+          <p>Developed By Al Zoldyck &copy; 2024</p>
+        </div>
+      </footer>
+                
         <div className="w-full md:w-2/3 p-4">
           
           {isLoading ? (
@@ -175,3 +183,14 @@ export default function Home() {
     </div>
   );
 }
+
+const footerStyle = {
+  backgroundColor: '#333',
+  color: '#7FFF00',
+  textAlign: 'center',
+  padding: '1rem',
+  position: 'fixed',
+  left: '0',
+  bottom: '0',
+  width: '100%',
+};
